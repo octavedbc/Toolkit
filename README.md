@@ -2,6 +2,8 @@
 
 This project provides a visual representation of earthquakes around the world over the past week using Streamlit.
 
+Check it out @ https://hub.docker.com/repository/docker/octavedev7/earthquake-viz-app/general
+
 ## 📋 Table of Contents
 - [Prerequisites](#prerequisites)
 - [Installation & Setup](#installation--setup)
@@ -93,3 +95,13 @@ After executing these commands, you can access the Streamlit app by navigating t
    ```
 
    Replace `[CONTAINER_ID_OR_NAME]` with the actual container ID or name from the `docker ps` command.
+
+4. **Update Docker Hub**:
+
+   ```bash
+    sudo docker tag earthquake_viz octavedev7/earthquake-viz-app:latest
+    ```
+
+   ```bash
+    sudo docker push octavedev7/earthquake-viz-app:latest
+   ```
